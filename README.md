@@ -13,8 +13,6 @@
 bower install parrot-module-url
 ```
 
-Use `require('parrot-url')` for load the module.
-
 ## Browsers Compatibility
 
 [![browser support](https://ci.testling.com/parrotjs/parrot-module-url.png)
