@@ -16,8 +16,10 @@ pkg        = require './package.json'
 
 path =
   core:
-    src   : 'source/parrot.url.coffee'
-    dist  : 'dist'
+    src      : 'source/parrot.url.coffee'
+    debug    : 'parrot.url.develop.js'
+    standard : 'parrot.url.js'
+    dist     : 'dist'
 
   dependency:
     jsurl : 'components/jsurl/url.min.js'
@@ -39,8 +41,8 @@ banner = [ "/**"
 # -- Tasks ---------------------------------------------------------------------
 
 gulp.task 'develop', ->
-  gulp.src [path.core.src]
-  .pipe concat 'parrot.url.develop.js'
+  gulp.src path.core.src
+  .pipe concat path.core.debug
   .pipe coffee().on 'error', gutil.log
   .pipe header banner, pkg: pkg
   .pipe gulp.dest path.core.dist
@@ -48,8 +50,8 @@ gulp.task 'develop', ->
   return
 
 gulp.task 'standard', ->
-  gulp.src [path.dependency.jsurl, 'dist/parrot.url.develop.js']
-  .pipe concat 'parrot.url.js'
+  gulp.src [path.dependency.jsurl, "#{path.core.dist}/#{path.core.debug}"]
+  .pipe concat path.core.standard
   .pipe uglify()
   .pipe header banner, pkg: pkg
   .pipe gulp.dest path.core.dist
