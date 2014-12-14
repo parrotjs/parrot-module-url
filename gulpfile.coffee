@@ -23,10 +23,7 @@ path =
     jsurl : 'components/jsurl/url.min.js'
 
   test:
-    src   : ['test/source/test.url.coffee'
-             'test/source/test.ajax.coffee'
-             'test/source/test.store.coffee'
-             'test/source/test.notification.coffee']
+    src   : 'test/source/test.url.coffee'
     dist  : 'test/dist'
     index : 'test/index.html'
 
