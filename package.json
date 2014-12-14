@@ -8,7 +8,6 @@
     "url": "https://github.com/Kikobeats"
   },
   "devDependencies": {
-    "browserify": "*",
     "coffee-script": "*",
     "gulp": "*",
     "gulp-coffee": "*",
@@ -20,8 +19,7 @@
     "gulp-util": "*",
     "gulp-watch": "*",
     "mocha": "*",
-    "should": "*",
-    "vinyl-source-stream": "*"
+    "should": "*"
   },
   "homepage": "http://github.com/sailor/parrot-module-url",
   "license": "MIT",
