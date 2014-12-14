@@ -1,0 +1,50 @@
+{
+  "name": "parrot-module-url",
+  "description": "URL Management for Parrot",
+  "version": "0.12.14",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-header": "*",
+    "gulp-open": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "mocha": "*",
+    "should": "*",
+    "vinyl-source-stream": "*"
+  },
+  "homepage": "http://github.com/sailor/parrot-module-url",
+  "license": "MIT",
+  "main": "dist/parrot.url.js",
+  "repository": "sailorjs/parrot-module-url",
+  "testling": {
+    "harness": "mocha-bdd",
+    "scripts": [
+      "dist/parrot.quo.js",
+      "node_modules/should/should.min.js"
+    ],
+    "files": [
+      "test/dist/test.js"
+    ],
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  }
+}

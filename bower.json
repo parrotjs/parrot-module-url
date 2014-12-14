@@ -1,0 +1,23 @@
+{
+  "name": "parrot-module-url",
+  "description": "URL Management for Parrot",
+  "version": "0.12.14",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "parrotjs": "*"
+  },
+  "dependencies": {
+    "jsurl": "*"
+  }
+}
