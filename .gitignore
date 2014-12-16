@@ -28,5 +28,5 @@ coverage
 # Other
 ############################
 .node_history
-dist/parrot.device.develop.js
+dist/parrot.*.develop.js
 components
