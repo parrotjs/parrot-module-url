@@ -1,7 +1,7 @@
 # Parrot URL <a href="http://bower.io/search/?q=parrot-module-url"><img src="http://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30"></a>
 
-[![Dependency status](http://img.shields.io/david/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/Parrotjs)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/Parrotjs#info=devDependencies)
+[![Dependency status](http://img.shields.io/david/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/parrot-module-url)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/parrotjs/Parrotjs.svg?style=flat)](https://david-dm.org/parrotjs/parrot-module-url#info=devDependencies)
 [![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat)](https://www.gittip.com/Kikobeats/)
 
 > URL Management with support for different environments (testing, production, development,...).
@@ -10,8 +10,7 @@ Remember use with [AJAX module](https://github.com/parrotjs/parrot-module-ajax) 
 
 ## Browser Compatibility
 
-[![browser support](https://ci.testling.com/parrotjs/parrot-module-url.png)
-](https://ci.testling.com/parrotjs/parrot-module-url)
+[![browser support](https://ci.testling.com/parrotjs/parrot-module-url.png)](https://ci.testling.com/parrotjs/parrot-module-url)
 
 ## Install
 
