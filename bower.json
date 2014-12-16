@@ -19,5 +19,10 @@
     "test",
     "tests"
   ],
+  "keywords": [
+    "parrot",
+    "module",
+    "url"
+  ],
   "license": "MIT"
 }

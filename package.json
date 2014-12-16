@@ -22,6 +22,11 @@
     "should": "*"
   },
   "homepage": "http://github.com/sailor/parrot-module-url",
+  "keywords": [
+    "parrot",
+    "module",
+    "url"
+  ],
   "license": "MIT",
   "main": "dist/parrot.url.js",
   "repository": "sailorjs/parrot-module-url",
