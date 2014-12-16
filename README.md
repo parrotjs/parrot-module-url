@@ -7,6 +7,8 @@
 
 > URL Management with support for different environments (testing, production, development,...).
 
+Remember use with [AJAX module](https://github.com/parrotjs/parrot-module-ajax) for better experience.
+
 ## Browsers Compatibility
 
 [![browser support](https://ci.testling.com/parrotjs/parrot-module-url.png)
@@ -20,17 +22,19 @@ bower install parrot-module-url --save
 
 ## Get Started
 
-The module `parrot.url` provides you everything you need for URL management.
+The module `parrot.url` provides you everything you need for URL management. For do this:
 
-Remember use with [AJAX module](https://github.com/parrotjs/parrot-module-ajax) for better experience.
+* Extend `parrot` namespace.
+* Add new `parrot.endpoint` namespace.
+* Add new `parrot.url` namespace.
 
-### Namespaces
+## Documentation
 
-#### parrot
+### parrot
 
 In the `parrot` namespace, add the following methods:
 
-##### .environment
+#### .environment
 
 It returns the environment that you are using at this moment.
 
@@ -41,22 +45,11 @@ parrot.environment
 
 The default environment is `development`.
 
-##### .language
-
-It returns the language that you want to use in the requests with your API's endpoints.
-
-```coffee
-parrot.language
-# => 'en'
-```
-
-The default language is obtained from `navigator.language`, which is the browser's language.
-
-#### parrot.endpoint
+### parrot.endpoint
 
 The methods that are available in the `parrot.endpoint` namespace are:
 
-##### .add(&lt;Object&gt;)
+#### .add(&lt;Object&gt;)
 
 It registers a new endpoint. Object must have:
 
@@ -72,7 +65,7 @@ parrot.endpoint.development()
 # => http://localhost:1337
 ```
 
-##### .set(&lt;String&gt;)
+#### .set(&lt;String&gt;)
 
 It sets the default environment of `parrot.environment`. It's important due to the URLs depend on the URL path registered in the environment.
 
@@ -84,9 +77,9 @@ The methods that are available in `parrot.url` namespace are:
 
 URL Management makes easier to do ajax or sockets requests with your backend. In order to do it, you need first to register the URLs. Each URL has a different schema, as `protocol`, `path` and/or `query`.
 
-#### parrot.URL
+### parrot.URL
 
-##### .add(&lt;Object&gt;)
+#### .add(&lt;Object&gt;)
 
 It registers a new URL. The minimum information you need to check is:
 
@@ -120,7 +113,6 @@ If you want update a value, you can provide an argument when you call the method
 user = username: 'kiko', password: 'nerd'
 parrot.url.login send: user
 ```
-
 
 ## License
 
