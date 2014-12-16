@@ -5,7 +5,12 @@
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
   ],
-  "license": "MIT",
+  "dependencies": {
+    "jsurl": "*"
+  },
+  "devDependencies": {
+    "parrotjs": "*"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,10 +19,5 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "parrotjs": "*"
-  },
-  "dependencies": {
-    "jsurl": "*"
-  }
+  "license": "MIT"
 }
