@@ -1,6 +1,6 @@
 /**
- * parrot-module-url - URL Management for Parrot
- * @version v0.12.14
+ * parrot-module-url - URL Management with support for different environments (testing, production, development,...).
+ * @version v0.12.16
  * @link    http://github.com/sailor/parrot-module-url
  * @author  Kiko Beats (https://github.com/Kikobeats)
  * @license MIT
@@ -28,7 +28,6 @@
       return query;
     };
     parrot.environment = 'development';
-    parrot.language = navigator.language.slice(0, 2);
     parrot.endpoint = {
       add: function(obj) {
         this[obj.name] = function() {

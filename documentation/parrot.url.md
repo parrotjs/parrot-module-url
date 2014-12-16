@@ -1,11 +1,10 @@
-### URL
+### Parrot URL
 
 The module `parrot.url` provides you everything you need for URL management.
 
-This module adds two namespaces:
+Remember use with [AJAX module](https://github.com/parrotjs/parrot-module-ajax) for better experience.
 
-* `parrot.endpoint`, which is used to select and switch between different API's endpoints (production, test, development,...)
-* `parrot.URL`, wich is used to save URL's that you need in your frontend.
+### Namespaces
 
 #### parrot
 
@@ -101,5 +100,3 @@ If you want update a value, you can provide an argument when you call the method
 user = username: 'kiko', password: 'nerd'
 parrot.url.login send: user
 ```
-
-Check the [AJAX module](https://github.com/sailorjs/parrotjs/blob/beta/documentation/parrot.ajax.md) if you want to know how to update values at the moment of the request.
