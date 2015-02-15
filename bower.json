@@ -1,12 +1,13 @@
 {
   "name": "parrot-module-url",
   "description": "URL Management with support for different environments (testing, production, development,...).",
-  "version": "0.12.16",
+  "version": "1.0.0",
   "authors": [
     "Kiko Beats <josefrancisco.verdu@gmail.com>"
   ],
   "dependencies": {
-    "jsurl": "*"
+    "jsurl": "*",
+    "fn-partial": "*"
   },
   "devDependencies": {
     "parrotjs": "*"

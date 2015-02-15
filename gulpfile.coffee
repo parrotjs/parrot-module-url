@@ -1,18 +1,18 @@
 'use strict'
 
-# -- Dependencies --------------------------------------------------------------
+# -- Dependencies -------------------------------------------------------------
 
-gulp       = require 'gulp'
-gutil      = require 'gulp-util'
-open       = require 'gulp-open'
-concat     = require 'gulp-concat'
-coffee     = require 'gulp-coffee'
-header     = require 'gulp-header'
-uglify     = require 'gulp-uglify'
-connect    = require 'gulp-connect'
-pkg        = require './package.json'
+gulp    = require 'gulp'
+gutil   = require 'gulp-util'
+open    = require 'gulp-open'
+concat  = require 'gulp-concat'
+coffee  = require 'gulp-coffee'
+header  = require 'gulp-header'
+uglify  = require 'gulp-uglify'
+connect = require 'gulp-connect'
+pkg     = require './package.json'
 
-# -- Files ---------------------------------------------------------------------
+# -- Files --------------------------------------------------------------------
 
 path =
   core:
@@ -22,7 +22,8 @@ path =
     dist     : 'dist'
 
   dependency:
-    jsurl : 'components/jsurl/url.min.js'
+    jsurl   : 'components/jsurl/url.min.js'
+    partial : 'components/fn-partial/dist/fn-partial.js'
 
   test:
     src   : 'test/source/test.url.coffee'
@@ -50,7 +51,7 @@ gulp.task 'develop', ->
   return
 
 gulp.task 'standard', ->
-  gulp.src [path.dependency.jsurl, "#{path.core.dist}/#{path.core.debug}"]
+  gulp.src [path.dependency.jsurl, path.dependency.partial, "#{path.core.dist}/#{path.core.debug}"]
   .pipe concat path.core.standard
   .pipe uglify()
   .pipe header banner, pkg: pkg
@@ -79,7 +80,7 @@ gulp.task 'browser', ->
   return
 
 gulp.task 'test', ->
-  gulp.start ['develop', 'mocha', 'server', 'browser']
+  gulp.start ['build', 'mocha', 'server', 'browser']
   gulp.watch path.core.src, ['develop']
   gulp.watch path.test.src, ['mocha']
   return
